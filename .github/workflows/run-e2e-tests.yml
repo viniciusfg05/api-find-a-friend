@@ -30,4 +30,9 @@ jobs:
       - run: npm run test:e2e
         env:
           JWT_SECRET: test
-          DATABASE_URL: "postgresql://docker:docker@localhost:5432/apisolid?schema=public"
+          DATABASE_URL: "postgresql://docker:docker@localhost:5432/findafriend?schema=public"
+          AWS_DEFAULT_REGION: "eu-north-1"
+          STORAGE_ENVIRAMENTS: "s3" # s3 our local
+          BUCKET_NAME: "find-a-friend-vinicius"
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}

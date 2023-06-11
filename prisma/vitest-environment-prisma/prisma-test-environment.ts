@@ -6,7 +6,6 @@ import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient()
 
-// postgresql://docker:docker@localhost:5432/apisolid?schema=public
 
 function generateDatabaseURL(schema: string) {
   if (!process.env.DATABASE_URL) {

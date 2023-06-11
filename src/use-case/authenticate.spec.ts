@@ -17,7 +17,7 @@ describe('Authentication Use Case', () => {
     sutOrg = new RegisterOrganizationsUserCase(organizationsRepository)
   })
 
-  it.only('should be able to authenticate', async () => {
+  it('should be able to authenticate', async () => {
     await sutOrg.execute({
       address: 'QS 12 CJ 9B',
       cep: '71219585',
