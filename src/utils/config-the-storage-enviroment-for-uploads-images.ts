@@ -1,0 +1,1 @@
+function configTheStorageEnvironmentForUploadsImages(storage: string) {}
